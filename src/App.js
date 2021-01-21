@@ -1,12 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-
-const StyledH1 = styled.h1`
-  color: red;
-`
+import TopPage from './components/pages/TopPage'
 
 const App = () => {
-  return <StyledH1>test</StyledH1>
+  return <TopPage />
 }
 
 export default App
