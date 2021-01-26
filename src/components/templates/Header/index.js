@@ -17,7 +17,9 @@ const LogoSection = styled.section`
   margin: 1rem 5rem 1rem 1rem;
 `
 
-const NavLinkSection = styled.section``
+const NavLinkSection = styled.section`
+  padding-top: 2.5rem;
+`
 
 const Header = (props) => {
   const { logo, navLinks } = props

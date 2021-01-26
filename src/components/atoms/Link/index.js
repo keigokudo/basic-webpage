@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link as RrdLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-const StyledA = styled.a`
+const StyledRrdLink = styled(RrdLink)`
   text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem;
 
   &:hover {
     opacity: 0.5;
@@ -12,7 +15,7 @@ const StyledA = styled.a`
 
 const Link = (props) => {
   const { name, url } = props
-  return <StyledA href={url}>{name}</StyledA>
+  return <StyledRrdLink to={url}>{name}</StyledRrdLink>
 }
 
 Link.propTypes = {
