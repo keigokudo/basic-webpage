@@ -6,7 +6,7 @@ import Link from '../../atoms/Link'
 
 import kvrLogo from '../../assets/image/kvr-demo-logo.png'
 
-const TopPage = () => {
+const Home = () => {
   const logoAltText = 'demo logo for the website'
   const SiteLogo = <Logo url={kvrLogo} altText={logoAltText} width="100" height="100" />
   const NavLink = <Link url="/about" name="about" />
