@@ -6,16 +6,21 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  box-sizing: border-box;
 `
 
 const Header = styled.header`
   height: 3rem;
   width: 100%;
   flex: 0 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 999;
   background: tomato;
 `
 
 const Content = styled.section`
+  padding-top: 3rem;
   width: 100%;
   flex: 1 0 auto;
   background: skyblue;
@@ -28,15 +33,20 @@ const Footer = styled.footer`
 `
 
 const PageTemplate = (props) => {
+  const { header, content, footer } = props
   return (
     <Wrapper>
-      <Header>header</Header>
-      <Content>content</Content>
-      <Footer>footer</Footer>
+      <Header>{header}</Header>
+      <Content>{content}</Content>
+      <Footer>{footer}</Footer>
     </Wrapper>
   )
 }
 
-PageTemplate.propType = {}
+PageTemplate.propType = {
+  header: PropTypes.node.isRequired,
+  content: PropTypes.node.isRequired,
+  footer: PropTypes.node.isRequired,
+}
 
 export default PageTemplate
