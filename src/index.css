@@ -1,5 +1,10 @@
 html,
 body {
+  height: 100vh;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+}
+
+#root {
+  height: 100vh;
 }
