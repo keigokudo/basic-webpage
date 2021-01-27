@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 
-import Header from '../../templates/Header'
-import InvertedTriangle from '../../templates/InvertedTriangle'
+import PageTemplate from '../../templates/PageTemplate'
 import Logo from '../../atoms/Logo'
 import Link from '../../atoms/Link'
 
@@ -12,12 +11,7 @@ const TopPage = () => {
   const SiteLogo = <Logo url={kvrLogo} altText={logoAltText} width="100" height="100" />
   const NavLink = <Link url="/about" name="about" />
 
-  return (
-    <Fragment>
-      <Header logo={SiteLogo} navLinks={NavLink} />
-      <InvertedTriangle />
-    </Fragment>
-  )
+  return <PageTemplate></PageTemplate>
 }
 
 export default TopPage
