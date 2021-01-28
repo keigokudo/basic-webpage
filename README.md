@@ -72,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Referrence
 
 https://bitsofco.de/viewport-vs-percentage-units/
+https://saruwakakun.com/html-css/reference/box-sizing
