@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-import PageTemplate from '../../templates/PageTemplate'
-import Logo from '../../atoms/Logo'
-import Link from '../../atoms/Link'
+import PageTemplate from 'components/templates/PageTemplate'
+import Logo from 'components/atoms/Logo'
+import Link from 'components/atoms/Link'
 
-import kvrLogo from '../../assets/image/kvr-demo-logo.png'
+import kvrLogo from 'components/assets/image/kvr-demo-logo.png'
 
 const Home = () => {
   const logoAltText = 'demo logo for the website'
@@ -14,4 +14,4 @@ const Home = () => {
   return <PageTemplate></PageTemplate>
 }
 
-export default TopPage
+export default Home
