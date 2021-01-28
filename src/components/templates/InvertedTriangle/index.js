@@ -1,6 +1,10 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 
+const Flex = styled.div`
+  flex: 1 0 auto;
+`
+
 const TopSection = styled.section`
   height: 25rem;
   width: 100%;
@@ -27,13 +31,13 @@ const SecondSection = styled.section`
 
 const InvertedTriangle = () => {
   return (
-    <Fragment>
+    <Flex>
       <TopSection />
       <Container>
         <FirstSection />
         <SecondSection />
       </Container>
-    </Fragment>
+    </Flex>
   )
 }
 
