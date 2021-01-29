@@ -73,3 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 https://bitsofco.de/viewport-vs-percentage-units/
 https://saruwakakun.com/html-css/reference/box-sizing
+https://react-icons.github.io/react-icons
