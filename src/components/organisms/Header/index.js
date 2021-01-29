@@ -2,27 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+import { HiOutlinePhotograph } from 'react-icons/hi'
+
+import HeaderNavLink from 'components/molecules/HeaderNavLink'
+
 const Container = styled.div`
   display: flex;
 `
 
-const LogoSection = styled.section``
+const StyeldSVG = styled(HiOutlinePhotograph)`
+  font-size: 3rem;
+`
 
 const NavLinkSection = styled.section``
 
 const Header = (props) => {
-  const { logo, navLinks } = props
-
   return (
     <Container>
-      <LogoSection>{logo}</LogoSection>
-      <NavLinkSection>{navLinks}</NavLinkSection>
+      <StyeldSVG />
+      <HeaderNavLink />
     </Container>
   )
 }
 
 Header.propTypes = {
-  logo: PropTypes.element,
   navLinks: PropTypes.arrayOf(PropTypes.element),
 }
 
