@@ -1,17 +1,10 @@
 import React from 'react'
 
 import PageTemplate from 'components/templates/PageTemplate'
-import Logo from 'components/atoms/Logo'
-import Link from 'components/atoms/Link'
-
-import kvrLogo from 'components/assets/image/kvr-demo-logo.png'
+import Header from 'components/organisms/Header'
 
 const Home = () => {
-  const logoAltText = 'demo logo for the website'
-  const SiteLogo = <Logo url={kvrLogo} altText={logoAltText} width="100" height="100" />
-  const NavLink = <Link url="/about" name="about" />
-
-  return <PageTemplate></PageTemplate>
+  return <PageTemplate header={<Header />} />
 }
 
 export default Home
