@@ -28,7 +28,7 @@ const Link = (props) => {
 Link.propTypes = {
   name: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
-  fontSize: PropTypes.number.isRequired,
+  fontSize: PropTypes.string,
 }
 
 export default Link
