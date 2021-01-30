@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 import { Link as RrdLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -7,7 +7,7 @@ import { Colors } from 'color.js'
 
 const StyledRrdLink = styled(RrdLink)`
   text-decoration: none;
-  font-size: 2rem;
+  font-size: ${(props) => (props.fontSize ? `${props.fontSize}rem}` : '1rem')};
   margin: 0 1rem;
   color: ${Colors.BlackOlive};
 
@@ -17,13 +17,18 @@ const StyledRrdLink = styled(RrdLink)`
 `
 
 const Link = (props) => {
-  const { name, to } = props
-  return <StyledRrdLink to={to}>{name}</StyledRrdLink>
+  const { name, to, fontSize } = props
+  return (
+    <StyledRrdLink to={to} fontSize={fontSize}>
+      {name}
+    </StyledRrdLink>
+  )
 }
 
 Link.propTypes = {
   name: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
+  fontSize: PropTypes.number.isRequired,
 }
 
 export default Link
