@@ -2,15 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 
 import FooterLink from 'components/molecules/FooterLink'
+import { Colors } from 'color.js'
 
 const Container = styled.div`
+  background: ${Colors.PaleSilver};
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   &:first-child {
-    margin-left: 2rem;
+    padding-left: 2rem;
   }
   &:last-child {
-    margin-right: 2rem;
+    padding-right: 2rem;
   }
 `
 

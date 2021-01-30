@@ -22,13 +22,11 @@ const Content = styled.section`
   padding-top: 3rem;
   width: 100%;
   flex: 1 0 auto;
-  background: skyblue;
 `
 const Footer = styled.footer`
   height: 8rem;
   width: 100%;
   flex: 0 0 auto;
-  background: grey;
 `
 
 const PageTemplate = (props) => {
