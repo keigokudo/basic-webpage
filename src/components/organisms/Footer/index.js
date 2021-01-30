@@ -6,7 +6,7 @@ import { Colors } from 'color.js'
 
 const Container = styled.div`
   background: ${Colors.PaleSilver};
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   &:first-child {
