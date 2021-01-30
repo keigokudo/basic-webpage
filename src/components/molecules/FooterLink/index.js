@@ -16,12 +16,16 @@ const Container = styled.div`
 `
 const FooterLink = (props) => {
   const { links } = props
-  const footerLink = links.map((i) => <Link name={i.name} to={i.to} />)
+  const footerLink = links.map((i, index) => (
+    <Link name={i.name} to={i.to} key={i.name + index} />
+  ))
   return <Container>{footerLink}</Container>
 }
 
 FooterLink.propType = {
-  links: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string, to: PropTypes.string })),
+  links: PropTypes.arrayOf(
+    PropTypes.shape({ name: PropTypes.string, to: PropTypes.string })
+  ),
 }
 
 export default FooterLink
