@@ -12,6 +12,9 @@ const Heading = (props) => {
   return <StyledHeading size={size}>{title}</StyledHeading>
 }
 
-Heading.propTypes = {}
+Heading.propTypes = {
+  title: PropTypes.string.isRequired,
+  size: PropTypes.string,
+}
 
 export default Heading
