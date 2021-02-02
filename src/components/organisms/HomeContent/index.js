@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 
 import HomeTopContent from 'components/molecules/HomeTopContent'
 import Feature from 'components/molecules/Feature'
+import Heading from 'components/atoms/Heading'
+import Paragraph from 'components/atoms/Paragraph'
 
 import { SiStyledComponents } from 'react-icons/si'
 import { FaBeer } from 'react-icons/fa'
@@ -13,16 +15,31 @@ import { Colors } from 'color.js'
 
 const Container = styled.div``
 
+const HeadingContainer = styled.div`
+  background: ${Colors.FloralWhite};
+  display: flex;
+  justify-content: center;
+`
+
 const FeatureList = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
+  background: ${Colors.FloralWhite};
 `
 
 const HomeContent = () => {
   return (
     <Container>
       <HomeTopContent />
+      <HeadingContainer>
+        <Heading
+          title="Features"
+          size="2"
+          level="2"
+          color={Colors.BlackOlive}
+        />
+      </HeadingContainer>
       <FeatureList>
         <Feature
           icon={<SiStyledComponents />}
