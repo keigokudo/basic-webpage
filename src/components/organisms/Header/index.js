@@ -5,13 +5,16 @@ import PropTypes from 'prop-types'
 import { HiOutlinePhotograph } from 'react-icons/hi'
 
 import HeaderNavLink from 'components/molecules/HeaderNavLink'
+import { Colors } from 'color.js'
 
 const Container = styled.div`
   display: flex;
+  background: ${Colors.FloralWhite};
 `
 
 const StyeldSVG = styled(HiOutlinePhotograph)`
   font-size: 3rem;
+  color: ${Colors.BlackOlive};
 `
 
 const NavLinkSection = styled.section``
