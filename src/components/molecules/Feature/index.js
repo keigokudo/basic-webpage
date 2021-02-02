@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import Link from 'components/atoms/Link'
 import Paragraph from 'components/atoms/Paragraph'
 
+import { Colors } from 'color.js'
+
 const Container = styled.div`
   display: flex;
   width: 25rem;
@@ -15,6 +17,7 @@ const Container = styled.div`
 const IconWrapper = styled.div`
   svg {
     font-size: 3rem;
+    color: ${Colors.BlackOlive};
   }
 `
 

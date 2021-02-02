@@ -9,12 +9,12 @@ import { Colors } from 'color.js'
 
 const Container = styled.div`
   display: flex;
-  background: ${Colors.FloralWhite};
+  background: ${Colors.BlackOlive};
 `
 
 const StyeldSVG = styled(HiOutlinePhotograph)`
   font-size: 3rem;
-  color: ${Colors.BlackOlive};
+  color: ${Colors.FloralWhite};
 `
 
 const NavLinkSection = styled.section``

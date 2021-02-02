@@ -10,13 +10,13 @@ import { Colors } from 'color.js'
 const Container = styled.div`
   display: flex;
   align-items: center;
-  background: ${Colors.FloralWhite};
+  background: ${Colors.BlackOlive};
 `
 
 const StyeldSVG = styled(FaReact)`
   font-size: 15rem;
   margin: 3rem;
-  color: ${Colors.BlackOlive};
+  color: ${Colors.FloralWhite};
 `
 
 const HomeTopContent = (props) => {
