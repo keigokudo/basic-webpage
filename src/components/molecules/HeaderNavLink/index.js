@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Link from 'components/atoms/Link'
 
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const Container = styled.div`
   margin-left: 3rem;

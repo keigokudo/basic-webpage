@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import ExternalLink from 'components/atoms/ExternalLink'
 import Paragraph from 'components/atoms/Paragraph'
 
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const Container = styled.div`
   display: flex;

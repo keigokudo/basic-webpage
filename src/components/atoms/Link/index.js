@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link as RrdLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const StyledRrdLink = styled(RrdLink)`
   text-decoration: none;

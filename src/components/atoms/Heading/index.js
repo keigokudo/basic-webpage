@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const StyledHeading = styled.h1`
   font-size: ${(props) => props.size};

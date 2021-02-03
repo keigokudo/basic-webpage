@@ -9,7 +9,7 @@ import { SiStyledComponents } from 'react-icons/si'
 import { FaBeer } from 'react-icons/fa'
 import { GiMolecule } from 'react-icons/gi'
 
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const Container = styled.div``
 

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { HiOutlinePhotograph } from 'react-icons/hi'
 
 import HeaderNavLink from 'components/molecules/HeaderNavLink'
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const Container = styled.div`
   display: flex;

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import FooterLink from 'components/molecules/FooterLink'
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const Container = styled.div`
   background: ${Colors.PaleSilver};
