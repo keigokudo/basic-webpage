@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 
 import { FaReact } from 'react-icons/fa'
 
@@ -19,7 +18,7 @@ const StyeldSVG = styled(FaReact)`
   color: ${Colors.FloralWhite};
 `
 
-const HomeTopContent = (props) => {
+const HomeTopContent = () => {
   return (
     <Container>
       <StyeldSVG />
