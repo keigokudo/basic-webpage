@@ -38,6 +38,11 @@ const Feature = (props) => {
   )
 }
 
-Feature.propTypes = {}
+Feature.propTypes = {
+  icon: PropTypes.node,
+  linkName: PropTypes.string.isRequired,
+  linkUrl: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}
 
 export default Feature
