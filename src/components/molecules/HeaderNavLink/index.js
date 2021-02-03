@@ -13,15 +13,15 @@ const Container = styled.div`
 
 const HeaderNavLink = () => {
   const Home = (
-    <Link name="HOME" to="./" fontSize="1.5" color={Colors.FloralWhite} />
+    <Link name="HOME" to="/" fontSize="1.5" color={Colors.FloralWhite} />
   )
   const About = (
-    <Link name="ABOUT" to="./about" fontSize="1.5" color={Colors.FloralWhite} />
+    <Link name="ABOUT" to="/about" fontSize="1.5" color={Colors.FloralWhite} />
   )
-  const Gallery = (
+  const Sample = (
     <Link
-      name="GALLERY"
-      to="./gallery"
+      name="SAMPLE"
+      to="/sample"
       fontSize="1.5"
       color={Colors.FloralWhite}
     />
@@ -30,7 +30,7 @@ const HeaderNavLink = () => {
     <Container>
       {Home}
       {About}
-      {Gallery}
+      {Sample}
     </Container>
   )
 }
