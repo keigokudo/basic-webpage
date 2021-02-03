@@ -1,11 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 
 import HomeTopContent from 'components/molecules/HomeTopContent'
 import Feature from 'components/molecules/Feature'
 import Heading from 'components/atoms/Heading'
-import Paragraph from 'components/atoms/Paragraph'
 
 import { SiStyledComponents } from 'react-icons/si'
 import { FaBeer } from 'react-icons/fa'
