@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import Link from 'components/atoms/Link'
+import ExternalLink from 'components/atoms/ExternalLink'
 import Paragraph from 'components/atoms/Paragraph'
 
 import { Colors } from 'color.js'
@@ -31,7 +31,7 @@ const Feature = (props) => {
     <Container>
       <IconWrapper>{icon && icon}</IconWrapper>
       <div>
-        <Link name={linkName} to={linkUrl} fontSize="1.5" />
+        <ExternalLink name={linkName} to={linkUrl} fontSize="1.5" />
         <StyledParagraph>{description}</StyledParagraph>
       </div>
     </Container>
