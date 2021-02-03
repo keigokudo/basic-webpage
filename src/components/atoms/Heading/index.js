@@ -27,7 +27,7 @@ Heading.propTypes = {
 
 Heading.defaultProps = {
   size: '5rem',
-  level: 1,
+  level: '1',
   color: Colors.FloralWhite,
 }
 
