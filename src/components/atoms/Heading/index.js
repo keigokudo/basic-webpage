@@ -6,8 +6,8 @@ import { Colors } from 'variables.js'
 
 const StyledHeading = styled.h1`
   font-size: ${(props) => props.size};
-  white-space: pre-wrap;
   color: ${(props) => props.color};
+  margin: 0;
 `
 
 const Heading = (props) => {
