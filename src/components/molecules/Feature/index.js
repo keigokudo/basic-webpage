@@ -5,13 +5,18 @@ import PropTypes from 'prop-types'
 import ExternalLink from 'components/atoms/ExternalLink'
 import Paragraph from 'components/atoms/Paragraph'
 
-import { Colors } from 'variables.js'
+import { Colors, breakPoints } from 'variables.js'
 
 const Container = styled.div`
   display: flex;
   width: 25rem;
   height: 8rem;
   margin: 2rem 3rem;
+
+  @media (max-width: ${breakPoints.sm}) {
+    width: auto;
+    height: auto;
+  }
 `
 
 const IconWrapper = styled.div`
