@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import FooterLink from 'components/molecules/FooterLink'
-import { Colors } from 'variables.js'
+import { Colors, breakPoints } from 'variables.js'
 
 const Container = styled.div`
   background: ${Colors.PaleSilver};
@@ -14,6 +14,10 @@ const Container = styled.div`
   }
   &:last-child {
     padding-right: 2rem;
+  }
+
+  @media (max-width: ${breakPoints.sm}) {
+    flex-direction: column;
   }
 `
 

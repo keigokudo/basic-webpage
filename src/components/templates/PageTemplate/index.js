@@ -24,7 +24,6 @@ const Content = styled.section`
   flex: 1 0 auto;
 `
 const Footer = styled.footer`
-  height: 8rem;
   width: 100%;
   flex: 0 0 auto;
 `
