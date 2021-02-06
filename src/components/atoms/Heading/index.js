@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { Colors } from 'variables.js'
 
 const StyledHeading = styled.h1`
-  font-size: ${(props) => props.size};
+  font-size: ${(props) => props.size}rem;
   color: ${(props) => props.color};
   margin: 0;
 `
@@ -26,7 +26,7 @@ Heading.propTypes = {
 }
 
 Heading.defaultProps = {
-  size: '5rem',
+  size: '5',
   level: '1',
   color: Colors.FloralWhite,
 }
