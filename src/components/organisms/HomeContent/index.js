@@ -40,7 +40,7 @@ const HomeContent = () => {
     <Container>
       <HomeTopContent />
       <HeadingContainer>
-        <Heading level="2">Features</Heading>
+        <StyledHeading level="2">Features</StyledHeading>
       </HeadingContainer>
       <FeatureList>
         <Feature

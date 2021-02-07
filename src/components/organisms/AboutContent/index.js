@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 
 import Paragraph from 'components/atoms/Paragraph'
 import Heading from 'components/atoms/Heading'
@@ -37,7 +36,7 @@ const StyledParagraph = styled(Paragraph)`
   font-size: 1.3rem;
 `
 
-const AboutContent = (props) => {
+const AboutContent = () => {
   return (
     <Container>
       <StyledHeading>About</StyledHeading>
