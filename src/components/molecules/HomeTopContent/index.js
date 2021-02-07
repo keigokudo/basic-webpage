@@ -48,7 +48,10 @@ const HeadingWrapper = styled.div`
   }
 `
 
-const StyledHeading = styled(Heading)``
+const StyledHeading = styled(Heading)`
+  color: ${Colors.FloralWhite};
+  font-size: 5rem;
+`
 
 const HomeTopContent = () => {
   return (
@@ -57,7 +60,7 @@ const HomeTopContent = () => {
         <StyeldSVG />
       </SVGWrapper>
       <HeadingWrapper>
-        <StyledHeading title={'React \r\nAtomic design'} />
+        <StyledHeading>React Atomic design</StyledHeading>
       </HeadingWrapper>
     </Container>
   )

@@ -20,6 +20,10 @@ const HeadingContainer = styled.div`
   margin-top: 1rem;
 `
 
+const StyledHeading = styled(Heading)`
+  font-size: 2rem;
+`
+
 const FeatureList = styled.div`
   display: flex;
   width: 100%;
@@ -36,12 +40,7 @@ const HomeContent = () => {
     <Container>
       <HomeTopContent />
       <HeadingContainer>
-        <Heading
-          title="Features"
-          size="2"
-          level="2"
-          color={Colors.BlackOlive}
-        />
+        <Heading level="2">Features</Heading>
       </HeadingContainer>
       <FeatureList>
         <Feature
