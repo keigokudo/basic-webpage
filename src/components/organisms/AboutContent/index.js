@@ -18,6 +18,11 @@ const Container = styled.div`
   align-items: center;
 `
 
+const StyledHeading = styled(Heading)`
+  margin: 1rem;
+  font-size: 3rem;
+`
+
 const ParagraphWrapper = styled.div`
   width: 35rem;
   margin: 2rem auto;
@@ -35,7 +40,7 @@ const StyledParagraph = styled(Paragraph)`
 const AboutContent = (props) => {
   return (
     <Container>
-      <Heading title="About" size="4" color={Colors.BlackOlive} />
+      <StyledHeading>About</StyledHeading>
       <RoundedImage src={image} alt="profile picture" />
       <ParagraphWrapper>
         <StyledParagraph>
