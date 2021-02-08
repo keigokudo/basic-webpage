@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link as RrdLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import { Colors } from 'variables.js'
 
-const StyledRrdLink = styled(RrdLink)`
+const StyledA = styled.a`
   text-decoration: none;
   font-size: 1rem;
   margin: 0 1rem;
@@ -16,17 +15,17 @@ const StyledRrdLink = styled(RrdLink)`
   }
 `
 
-const Link = (props) => {
+const ExternalLink = (props) => {
   const { className, children, href, ...rest } = props
   return (
-    <StyledRrdLink className={className} to={href} {...rest}>
+    <StyledA className={className} href={href} target="_blank" {...rest}>
       {children}
-    </StyledRrdLink>
+    </StyledA>
   )
 }
 
-Link.propTypes = {
+ExternalLink.propTypes = {
   href: PropTypes.string.isRequired,
 }
 
-export default Link
+export default ExternalLink

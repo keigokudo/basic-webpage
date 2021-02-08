@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const Paragraph = styled.p`
   font-size: 1rem;

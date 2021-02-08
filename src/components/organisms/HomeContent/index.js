@@ -9,7 +9,7 @@ import { SiStyledComponents } from 'react-icons/si'
 import { FaBeer } from 'react-icons/fa'
 import { GiMolecule } from 'react-icons/gi'
 
-import { Colors } from 'color.js'
+import { Colors, breakPoints } from 'variables.js'
 
 const Container = styled.div``
 
@@ -17,6 +17,11 @@ const HeadingContainer = styled.div`
   background: ${Colors.FloralWhite};
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
+`
+
+const StyledHeading = styled(Heading)`
+  font-size: 2rem;
 `
 
 const FeatureList = styled.div`
@@ -24,6 +29,10 @@ const FeatureList = styled.div`
   width: 100%;
   justify-content: center;
   background: ${Colors.FloralWhite};
+
+  @media (max-width: ${breakPoints.sm}) {
+    flex-direction: column;
+  }
 `
 
 const HomeContent = () => {
@@ -31,12 +40,7 @@ const HomeContent = () => {
     <Container>
       <HomeTopContent />
       <HeadingContainer>
-        <Heading
-          title="Features"
-          size="2"
-          level="2"
-          color={Colors.BlackOlive}
-        />
+        <StyledHeading level="2">Features</StyledHeading>
       </HeadingContainer>
       <FeatureList>
         <Feature

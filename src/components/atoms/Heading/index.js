@@ -2,33 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { Colors } from 'color.js'
+import { Colors } from 'variables.js'
 
 const StyledHeading = styled.h1`
-  font-size: ${(props) => props.size};
-  white-space: pre-wrap;
-  color: ${(props) => props.color};
+  color: ${Colors.BlackOlive};
+  margin: 0;
 `
 
 const Heading = (props) => {
-  const { title, size, level, color } = props
+  const { className, children, level } = props
   return (
-    <StyledHeading size={size} as={`h${level}`} color={color}>
-      {title}
+    <StyledHeading className={className} as={`h${level}`}>
+      {children}
     </StyledHeading>
   )
 }
 
 Heading.propTypes = {
-  title: PropTypes.string.isRequired,
-  size: PropTypes.string,
   level: PropTypes.string,
 }
 
 Heading.defaultProps = {
-  size: '5rem',
-  level: 1,
-  color: Colors.FloralWhite,
+  level: '1',
 }
 
 export default Heading

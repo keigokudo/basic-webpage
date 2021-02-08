@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import FooterLink from 'components/molecules/FooterLink'
-import { Colors } from 'color.js'
+import { Colors, breakPoints } from 'variables.js'
 
 const Container = styled.div`
   background: ${Colors.PaleSilver};
@@ -15,27 +15,31 @@ const Container = styled.div`
   &:last-child {
     padding-right: 2rem;
   }
+
+  @media (max-width: ${breakPoints.sm}) {
+    flex-direction: column;
+  }
 `
 
 const StyledSection = styled.div``
 
 const Footer = (props) => {
   const leftLinks = [
-    { name: 'left link1', to: './' },
-    { name: 'left link2', to: './' },
-    { name: 'left link3', to: './' },
+    { name: 'left link1', href: './' },
+    { name: 'left link2', href: './' },
+    { name: 'left link3', href: './' },
   ]
 
   const centerLinks = [
-    { name: 'center link1', to: './' },
-    { name: 'center link2', to: './' },
-    { name: 'center link3', to: './' },
+    { name: 'center link1', href: './' },
+    { name: 'center link2', href: './' },
+    { name: 'center link3', href: './' },
   ]
 
   const rightLinks = [
-    { name: 'right link1', to: './' },
-    { name: 'right link2', to: './' },
-    { name: 'right link3', to: './' },
+    { name: 'right link1', href: './' },
+    { name: 'right link2', href: './' },
+    { name: 'right link3', href: './' },
   ]
 
   return (
