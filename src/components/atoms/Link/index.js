@@ -7,9 +7,9 @@ import { Colors } from 'variables.js'
 
 const StyledRrdLink = styled(RrdLink)`
   text-decoration: none;
-  font-size: ${(props) => (props.fontSize ? `${props.fontSize}rem}` : '1rem')};
+  font-size: 1rem;
   margin: 0 1rem;
-  color: ${(props) => (props.color ? props.color : Colors.BlackOlive)};
+  color: ${Colors.BlackOlive};
 
   &:hover {
     opacity: 0.7;
@@ -17,18 +17,16 @@ const StyledRrdLink = styled(RrdLink)`
 `
 
 const Link = (props) => {
-  const { name, to, fontSize, color } = props
+  const { className, children, href, ...rest } = props
   return (
-    <StyledRrdLink to={to} fontSize={fontSize} color={color}>
-      {name}
+    <StyledRrdLink className={className} to={href} {...rest}>
+      {children}
     </StyledRrdLink>
   )
 }
 
 Link.propTypes = {
-  name: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
-  fontSize: PropTypes.string,
+  href: PropTypes.string.isRequired,
 }
 
 export default Link

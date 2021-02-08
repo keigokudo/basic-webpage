@@ -24,14 +24,16 @@ const Container = styled.div`
 const FooterLink = (props) => {
   const { links } = props
   const footerLink = links.map((i, index) => (
-    <Link name={i.name} to={i.to} key={i.name + index} />
+    <Link href={i.href} key={i.name + index}>
+      {i.name}
+    </Link>
   ))
   return <Container>{footerLink}</Container>
 }
 
 FooterLink.propType = {
   links: PropTypes.arrayOf(
-    PropTypes.shape({ name: PropTypes.string, to: PropTypes.string })
+    PropTypes.shape({ name: PropTypes.string, href: PropTypes.string })
   ),
 }
 

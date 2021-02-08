@@ -11,26 +11,17 @@ const Container = styled.div`
   align-items: center;
 `
 
+const StyledLink = styled(Link)`
+  color: ${Colors.FloralWhite};
+  font-size: 1.5rem;
+`
+
 const HeaderNavLink = () => {
-  const Home = (
-    <Link name="HOME" to="/" fontSize="1.5" color={Colors.FloralWhite} />
-  )
-  const About = (
-    <Link name="ABOUT" to="/about" fontSize="1.5" color={Colors.FloralWhite} />
-  )
-  const Sample = (
-    <Link
-      name="SAMPLE"
-      to="/sample"
-      fontSize="1.5"
-      color={Colors.FloralWhite}
-    />
-  )
   return (
     <Container>
-      {Home}
-      {About}
-      {Sample}
+      <StyledLink href="/">HOME</StyledLink>
+      <StyledLink href="/about">ABOUT</StyledLink>
+      <StyledLink href="/sample">SAMPLE</StyledLink>
     </Container>
   )
 }
