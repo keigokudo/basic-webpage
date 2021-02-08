@@ -8,8 +8,8 @@ const StyledImage = styled.img`
 `
 
 const RoundedImage = (props) => {
-  const { src, alt, ...rest } = props
-  return <StyledImage src={src} alt={alt} rest={rest} />
+  const { className, src, alt, ...rest } = props
+  return <StyledImage className={className} src={src} alt={alt} {...rest} />
 }
 
 export default RoundedImage
