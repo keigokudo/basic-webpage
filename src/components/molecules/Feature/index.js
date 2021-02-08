@@ -26,6 +26,10 @@ const IconWrapper = styled.div`
   }
 `
 
+const StyledExternalLink = styled(ExternalLink)`
+  font-size: 1.5rem;
+`
+
 const StyledParagraph = styled(Paragraph)`
   margin: 0.5rem 1rem 0.5rem 1rem;
 `
@@ -36,7 +40,7 @@ const Feature = (props) => {
     <Container>
       <IconWrapper>{icon && icon}</IconWrapper>
       <div>
-        <ExternalLink name={linkName} to={linkUrl} fontSize="1.5" />
+        <StyledExternalLink href={linkUrl}>{linkName}</StyledExternalLink>
         <StyledParagraph>{description}</StyledParagraph>
       </div>
     </Container>
